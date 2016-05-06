@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - Hojas de estilo en cascada documento</title>
+    <style>
+    /* selectores de etiqueta */
+        body {
+            font-family: mars needs cunnilingus;
+        }
+        p {
+            line-height: 25px;
+        }
+        /*Selectores deID*/
+        /*"Importante: en HTML se recomienda usar un solo ID a la vez"*/
+        #subtitulo {
+            color: darkmagenta;
+        }
+        #maintitle {
+           /* color: rgba(420, 0, 240, 20); */
+            color: #420;
+            }
+        /* selectores tipo clase*/
+        .articulo>header {
+            font-weight: bold;
+            font-size: 1.5em;
+         /* pt: points, px: pixels, em: ? */
+        }
+        .contenido {
+            line-height: 1em;
+            text-align: justify;
+        }
+        .articulo p {
+            line-height: 1em;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="maintitle">CSS - Hojas de estilo en cascada documento</h1>
+    <p>Lorem ipsum dolor sit amet,  adipisicing elit. Mollitia itaque quas molestiae neque. Quibusdam reprehenderit, iure quam nihil doloremque, cupiditate incidunt odit error iusto, hic laborum laudantium magnam necessitatibus nesciunt.  FIYUR!!</p>
+    <h2 id="subtitulo">Ejemplo de ID</h2>
+    <section id="articulos"> 
+    <article class="articulo"> 
+           <header class="titulo">Titulo de articulo 0</header>
+               <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui eum, veniam, illo dicta dolores veritatis molestiae iusto et ipsam incidunt deleniti quasi labore impedit neque libero repellendus atque aperiam blanditiis. SHINESPIKE! </p>
+           <button class="leerchido">Leer mas...</button>
+    
+      </article>
+      
+          <article class="articulo"> 
+           <header class="titulo">Titulo de articulo 1</header>
+               <p  class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui eum, veniam, illo dicta dolores veritatis molestiae iusto et ipsam incidunt deleniti quasi labore impedit neque libero repellendus atque aperiam blanditiis. HERE I COME!! </p>
+           <button class="leerchido">Leer mas...</button>
+    
+        <article class="articulo"> 
+           <header class="titulo">Titulo de articulo 2</header>
+               <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui eum, veniam, illo dicta dolores veritatis molestiae iusto et ipsam incidunt deleniti quasi labore impedit neque libero repellendus atque aperiam blanditiis. :'V</p>
+           <button>Leer mas...</button>
+           
+               <article  class="articulo"> 
+           <header>Titulo de articulo 3</header>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui eum, veniam, illo dicta dolores veritatis molestiae iusto et ipsam incidunt deleniti quasi labore impedit neque libero repellendus atque aperiam blanditiis. </p>
+           <button>Leer mas...</button>
+    
+      </article>
+    
+      </article>
+      </article>
+    </section>
+</body>
+</html>  
