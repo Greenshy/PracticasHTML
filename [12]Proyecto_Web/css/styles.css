@@ -33,7 +33,7 @@ h1,h2,h4,h3,h5,h6,figure,p{
 #encabezado h4 { font-size: 0.8em; }
 #encabezado h5 { font-size: 0.6em; }
 
-#titulos *{
+#titulos {
     margin: 0;
 }
 #menu{
@@ -50,12 +50,12 @@ h1,h2,h4,h3,h5,h6,figure,p{
 #nota-importante{
     height: 300px;
     margin: 20px 0px;
-    padding: 0;
+   
     /*box shadow: horizontal, vertical*/
     box-shadow: 0 0 15px darkgray;
 }
 #nota-importante img{
-    border: 10px solid white;
+    border: 15px solid white;
     
 }
 /*NOTA IMPORTANTE FIN*/
@@ -64,11 +64,15 @@ h1,h2,h4,h3,h5,h6,figure,p{
     width: 700px;
     display: inline-block;
     float: left;
-    background-color: rgb(69, 37, 177);
-    
+    margin-top: 10px;
 }
 #notas-secundaria article{
-    display:flex;
+    display: flex;
+    background-image: url('../images/barra_separadora.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
 }
 #notas-secundarias figure{
     margin: 0;
@@ -86,18 +90,18 @@ h1,h2,h4,h3,h5,h6,figure,p{
     top: 10px;
     padding: 5px 10px;
 }
-.titulo-nota-secundaria;{
+.titulo-notas-secundaria;{
     font-size: 1.7em;
     line-height: 0.9em;
     font-variant: small-caps;
 }
-.cuerpo-nota-secundaria{
+.cuerpo-notas-secundaria{
     padding-left: 20px;
     padding-right: 10px;
 }
-.intro-nota-secundaria{
+.intro-notas-secundaria{
     text-align: justify;
-    font-size: 1.11em;
+    padding: 10px 0;
     
 }
 .boton{
@@ -115,17 +119,15 @@ h1,h2,h4,h3,h5,h6,figure,p{
     font-size: 1.1em;
 }
 #publicidad{
-    height: 150px;
+    min-height: 300px;
     width: 220px;
     display: inline-block;
     float: right;
-    background-color: rgba(0, 0, 0, 0.31);
 }
 
 #pie{
-   height: 150px;
-   clear: both;
-   background-color: lavenderblush;
+   min-height: 150px;
+   margin-top: 50px;
 }
 #encabezado figure {
     margin: 0;
@@ -157,4 +159,137 @@ h1,h2,h4,h3,h5,h6,figure,p{
 }
 #menu ul{
     padding: 0;
+}
+#politicas
+{
+    text-align: center;
+    border-top: 3px solid lightgray;
+    border-bottom: 3px solid lightgray;
+    padding: 5px 0;
+    color: darkgray;
+}
+#politicas abbr
+{
+   cursor: help;
+   border-bottom: 1px dotted lightgray;
+}
+/*PUBLICIDAD INICIO*/
+#redes-sociales
+{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.facebook, .twitter
+{
+  width: 33px;
+    height: 33px;
+    display: inline-block;
+    text-indent: -9999px;
+    transition: 0.2s;
+}
+.facebook
+{
+    margin-top: 10px;
+    background: url('../images/facebook_twitter.png') 0 0;
+}
+.twitter
+{
+    margin-top: 10px;
+    background: url('../images/facebook_twitter.png') -43px 0;
+}
+.facebook:hover
+{
+    background: url('../images/facebook_twitter.png') 0 -43px;
+}
+.twitter:hover
+{
+    background: url('../images/facebook_twitter.png') -43px -43px;
+}
+#publicidad{
+    min-height: 300px;
+    width: 220px;
+    display: inline-block
+}
+#publicidad img{
+    margin: 3px 0;
+}
+/*PUBLICIDAD FIN*/
+.flexible{
+    display: flex;
+}
+#progamas {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#pie{
+    min-width: 150px;
+}
+.sombra-imagen{
+    box-shadow: 0 0 5px #bdbdbd;
+}
+.figure-nota-secundaria{
+    position: relative;
+}
+.figure-nota-secundarias span{
+    position:absolute;
+    top: 10px;
+    left: -5px;
+    padding: 5px 10px;
+    background-color: lightgray;
+}
+#logo-sems {
+    background-image: url(../images/footer/sems_footer.png);
+    
+    height: 60px;
+    width: 215px;
+    display: block;
+    text-indent: -9999px;
+    margin: auto;
+}
+
+#separador-sems {
+    margin: 30px 0;
+    position: relative;
+}
+#logo-sems::before, #logo-sems::after
+{
+    content: "";
+    border-top: 3px double lightgray;
+    display: block;
+    position: absolute;
+    width: 340px;
+    top: 30px;
+}
+
+#logo-sems::after
+{
+
+    right: 0;
+}
+#logo-sems::before
+{
+    left: 0; 
+}
+#direccion {
+    text-align: center;
+    color: darkgray;
+    font-size: 0.8em;
+}
+
+#programas
+{
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+margin-top: 115px;    
+}
+.articulo
+{
+    display: flex;
+    background-image: url('../images/barra_separadora.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+        padding-bottom: 40px;
+    margin-bottom: 20px;
 }
